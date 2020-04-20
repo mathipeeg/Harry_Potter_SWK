@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/stylesheet.css">
+    <title>Harry Potter Books</title>
+</head>
+<body>
+<div id="background">
+    <div th:replace="/header :: header"></div>
+    <br>
+    <div class="container">
+        <div class="left-div">
+            <h3>Harry Potter bøger, danske udgivelser</h3>
+
+            <img class="book-photo" src="../static/img/HP.jpeg" alt="Harry Potter and the">
+
+            <br> 1. Harry Potter og De Vises Sten (1998)<br><br>
+            2. Harry Potter og Hemmelighedernes Kammer (1999)<br><br>
+            3. Harry Potter og Fangen fra Azkaban (1999)<br><br>
+            4. Harry Potter og Flammernes Pokal (2000)<br><br>
+            5. Harry Potter og Fønixordenen (2003)<br><br>
+            6. Harry Potter og Halvblodsprinsen (2005)<br><br>
+            7. Harry Potter og Dødsregalierne (2007)<br><br>
+            8. Harry Potter og det forbandede barn (2016)<br><br>
+            9. Fantastiske skabninger og hvor de findes (2017)<br><br>
+            10. Fantastiske skabninger: Grindelwalds Forbrydelser (2018)
+            <br>
+
+            <a class="book-review-link" onclick="window.location.href='/danishBookReviews'">Læs anmeldelser af de danske udgivelser</a>
+
+        </div>
+        <div class="right-div">
+            <h3>Harry Potter bøger, engelske udgivelser</h3>
+            <img class="book-photo" src="../static/img/HP2.jpeg" alt="Harry Potter and the Chamber of Secrets">
+
+            <br> 1. Harry Potter and the Philosopher’s Stone (1997)<br><br>
+            2. Harry Potter and the Chamber of Secrets (1998)<br><br>
+            3. Harry Potter and the Prisoner of Azkaban (1999)<br><br>
+            4. Harry Potter and the Goblet of Fire (2000)<br><br>
+            5. Harry Potter and the Order of the Phoenix (2003)<br><br>
+            6. Harry Potter and the Half-Blood Prince (2005)<br><br>
+            7. Harry Potter and the Deathly Hallows (2007)<br><br>
+            8. Harry Potter and the Cursed Child (2016)<br><br>
+            9. Fantastic Beasts and where to find them (2016)<br><br>
+            10. Fantastic Beasts: The crimes of Grindelwald (2018)
+            <br>
+            <a class="book-review-link" onclick="window.location.href='/englishBookReviews'">Læs anmeldelser af de engelske udgivelser</a>
+        </div>
+        <footer class="footer">
+            <h5>Kontakt: <b>hp@fan4ever.com</b>
+                <span id="footer-span">||</span> MEN ring ikke </h5>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

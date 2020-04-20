@@ -1,0 +1,106 @@
+@font-face {
+    font-family: "harry potter";
+    src: url("./fonts/HARRYP__.TTF");
+}
+
+body, html{
+    height: 100%;
+    margin: 0px;
+}
+
+button{
+    /*background-color: white; !* Green *!*/
+    background-color: black; /* Green */
+    /*border: 2px solid #008CBA;*/
+    border: 2px solid rgba(0, 13, 128, 0.8);
+    color: white;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover{
+    /*background-color: #008CBA;*/
+    background-color: white;
+    color: black;
+    box-shadow: 0 5px 9px 0 rgba(149, 255, 224, 0.4), 0 7px 21px 0 rgba(149, 255, 224, 0.4);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+#header-title{
+    text-align: center;
+    font-family: harry potter;
+    font-size: 8rem;
+    cursor: pointer;
+    padding-bottom: 15px;
+    margin: 0px;
+    text-shadow: 4px 4px 10px #ffffff, 4px 4px 10px #ffffff;
+}
+.header-div{
+    width: 56rem;
+    margin: 0px;
+    padding-bottom: 0.5rem;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    /*background-color: rgba(82, 207, 216, 0.5);*/
+    border-radius: 5px;
+    /*transform: translate(-50%, -50%);*/
+}
+.container{
+    width: 80rem;
+    height: 75%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 0;
+    border-radius: 7px;
+}
+
+#footer-span{
+    word-spacing: 8px;
+}
+
+.book-photo{
+    width: 230px;
+    height: 100px;
+}
+
+.left-div{
+    position: absolute;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.right-div{
+    text-align: center;
+    padding: 15px 15px 15px 50%;
+    z-index: 1;
+    width: 50%;
+    height: auto;
+}
+
+.book-review-link{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+#background{
+    background-image: url('../static/img/hp-background.jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}

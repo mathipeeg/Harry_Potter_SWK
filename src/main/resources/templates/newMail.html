@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/stylesheet.css">
+    <title>New Fan Mail!</title>
+</head>
+<body>
+<div id="background">
+    <div th:replace="/header :: header"></div>
+    <form class="center" th:action="@{/createMail}" method="post">
+        <div class="container">
+            <table>
+                <tr>
+                    <td><input class="new-mail-input" name="senderName" type="text" placeholder="Dit navn..."></td>
+                    <td><input class="new-mail-input" name="title" type="text" placeholder="Titel..."></td>
+                    <td><input class="new-mail-input" name="message" type="text" placeholder="Indtast besked..."></td>
+                    <input type="submit" class="new-mail-submit" name="submit" value="Send mail">
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>
+</body>
+</html>
