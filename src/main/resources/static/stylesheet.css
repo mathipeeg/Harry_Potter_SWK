@@ -143,18 +143,20 @@ button:hover{
 .left-div{
     position: absolute;
     z-index: 1;
-    width: 50%;
+    width: 35%;
     height: auto;
     padding: 15px;
-    text-align: center;
+    text-align: left;
+    font-size: large;
 }
 
 .right-div{
-    text-align: center;
+    text-align: start;
     padding: 15px 15px 15px 50%;
     z-index: 1;
-    width: 50%;
+    width: 40%;
     height: auto;
+    font-size: large;
 }
 
 .book-review-link{
@@ -168,8 +170,9 @@ button:hover{
     cursor: pointer;
     margin: 15px;
 }
+
 #background{
-    background-image: url('../static/img/hp-background.jpg');
+    background-image: url('../static/img/hp-index.jpg');
     height: 100%;
     width: 100%;
     background-position: center;
@@ -272,7 +275,46 @@ th{
 
 #textarea-td{
     background-color: rgba(0,81,59,0);
-    /*width: 15rem;*/
-    /*height: 16rem;*/
-    /*text-align: start;*/
+}
+
+.index-img{
+    height: 30px;
+    width: 80px;
+}
+
+.book-review-link{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+
+.actor-name {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.fiction-name {
+    display: inline-block;
+    argin-bottom: 50px;
+    font-size: 20px;
+    font-family: harry potter;
+}
+
+.actor-imdb-link{
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+
+.movie-photo{
+    width: 315px;
+    height: 600px;
+}
+
+.link-movies{
+    cursor: pointer;
+    text-decoration: underline;
+    color: blue;
 }

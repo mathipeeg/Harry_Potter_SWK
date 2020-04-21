@@ -59,4 +59,7 @@ public class HomeController {
     public String danishBooksReviews(){
         return "danishBookReviews";
     }
+
+    @GetMapping("/potter2")
+    public String potter2() {return "potter2";}
 }
