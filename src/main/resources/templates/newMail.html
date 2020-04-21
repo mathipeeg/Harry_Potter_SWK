@@ -6,20 +6,26 @@
     <title>New Fan Mail!</title>
 </head>
 <body>
-<div id="background">
+<div id="background-house">
     <div th:replace="/header :: header"></div>
-    <form class="center" th:action="@{/createMail}" method="post">
+    <form id="new-mail-form" th:action="@{/createMail}" method="post">
         <div class="container">
             <table>
                 <tr>
                     <td><input class="new-mail-input" name="senderName" type="text" placeholder="Dit navn..."></td>
                     <td><input class="new-mail-input" name="title" type="text" placeholder="Titel..."></td>
-                    <td><input class="new-mail-input" name="message" type="text" placeholder="Indtast besked..."></td>
-                    <input type="submit" class="new-mail-submit" name="submit" value="Send mail">
+                </tr>
+                <tr>
+                    <td id="textarea-td"><textarea rows="6" cols="52" form="new-mail-form" id="new-mail-message" class="new-mail-input" name="message" type="text" placeholder="Indtast besked her..."></textarea></td>
                 </tr>
             </table>
+            <input id="new-mail-submit" type="submit" name="submit" value="Send mail">
         </div>
     </form>
+</div>
+<div class="footer">
+    <h5>Kontakt: <b>hp@fan4ever.com</b>
+        <span id="footer-span">||</span> MEN ring ikke </h5>
 </div>
 </body>
 </html>

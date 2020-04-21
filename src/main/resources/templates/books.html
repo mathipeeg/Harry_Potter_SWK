@@ -6,14 +6,14 @@
     <title>Harry Potter Books</title>
 </head>
 <body>
-<div id="background">
+<div class="background-book">
     <div th:replace="/header :: header"></div>
     <br>
     <div class="container">
         <div class="left-div">
             <h3>Harry Potter bøger, danske udgivelser</h3>
 
-            <img class="book-photo" src="../static/img/HP.jpeg" alt="Harry Potter and the">
+            <img class="book-photo" src="../static/img/HP.jpeg" alt="Harry Potter and the Sorcerers Stone">
 
             <br> 1. Harry Potter og De Vises Sten (1998)<br><br>
             2. Harry Potter og Hemmelighedernes Kammer (1999)<br><br>
@@ -47,11 +47,11 @@
             <br>
             <a class="book-review-link" onclick="window.location.href='/englishBookReviews'">Læs anmeldelser af de engelske udgivelser</a>
         </div>
-        <footer class="footer">
-            <h5>Kontakt: <b>hp@fan4ever.com</b>
-                <span id="footer-span">||</span> MEN ring ikke </h5>
-        </footer>
     </div>
+</div>
+<div class="footer">
+    <h5>Kontakt: <b>hp@fan4ever.com</b>
+        <span id="footer-span">||</span> MEN ring ikke </h5>
 </div>
 </body>
 </html>

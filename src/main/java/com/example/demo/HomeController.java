@@ -47,11 +47,16 @@ public class HomeController {
     @PostMapping("/createMail")
     public String createMail(@ModelAttribute FanMail fanmail){
         fanMailService.createMail(fanmail);
-        return "fanmail";
+        return "redirect:/fanmail";
     }
 
-    @GetMapping("/bookReviews")
-    public String booksReviews(){
+    @GetMapping("/englishBookReviews")
+    public String englishBooksReviews(){
         return "englishBookReviews";
+    }
+
+    @GetMapping("/danishBookReviews")
+    public String danishBooksReviews(){
+        return "danishBookReviews";
     }
 }

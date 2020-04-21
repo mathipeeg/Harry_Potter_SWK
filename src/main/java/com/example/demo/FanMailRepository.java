@@ -11,7 +11,7 @@ import java.util.Date;
 import java.text.DateFormat;
 
 @Repository
-public class FanMailRepository {
+public class FanMailRepository{
 
     @Autowired
     JdbcTemplate jdbc;

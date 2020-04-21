@@ -6,6 +6,20 @@
 body, html{
     height: 100%;
     margin: 0px;
+    font-family: Helvetica;
+}
+
+.test{
+    font-family: harry potter;
+    display: inline-block;
+}
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
 }
 
 button{
@@ -25,6 +39,21 @@ button{
     border-radius: 5px;
 }
 
+#new-mail-submit, #fan-mail-btn{
+    background-color: lightgrey; /* Green */
+    border: 2px solid rgba(0, 13, 128, 0.6);
+    color: black;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 1px 1px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
 button:hover{
     /*background-color: #008CBA;*/
     background-color: white;
@@ -32,6 +61,36 @@ button:hover{
     box-shadow: 0 5px 9px 0 rgba(149, 255, 224, 0.4), 0 7px 21px 0 rgba(149, 255, 224, 0.4);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
+}
+
+#new-mail-submit:hover, #fan-mail-btn:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 5px 9px 0 rgba(149, 255, 224, 0.4), 0 7px 21px 0 rgba(149, 255, 224, 0.4);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+#new-mail-submit, #new-mail-submit:hover{
+    margin: 15px;
+}
+
+.new-mail-input{
+    width: 80%;
+    padding: 8px 12px;
+    margin: 15px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: solid 1px #C0C0C0;
+    background-color: lightgrey;
+    color: black;
+    vertical-align: center;
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+::placeholder{
+    color: black;
 }
 
 #header-title{
@@ -56,7 +115,7 @@ button:hover{
 }
 .container{
     width: 80rem;
-    height: 75%;
+    min-height: 40%;
     margin: auto;
     background-color: rgba(255, 255, 255, 0.5);
     z-index: 0;
@@ -70,6 +129,15 @@ button:hover{
 .book-photo{
     width: 230px;
     height: 100px;
+}
+
+.book-photo-big{
+    width: 745px;
+    height: 660px;
+}
+
+.img-div{
+    text-align: center;
 }
 
 .left-div{
@@ -95,6 +163,11 @@ button:hover{
     cursor: pointer;
 }
 
+#return-index{
+    color: #FFFFFF;
+    cursor: pointer;
+    margin: 15px;
+}
 #background{
     background-image: url('../static/img/hp-background.jpg');
     height: 100%;
@@ -103,4 +176,103 @@ button:hover{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
+}
+
+#background-house{
+    background-image: url('../static/img/hp-house-bg.jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+#background-castle{
+    background-image: url('../static/img/hp-castle-bg.jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+.background-book{
+    background-image: url('../static/img/hp-book-bg.jpg');
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+
+#fan-mail-btn{
+    margin: 15px;
+}
+
+#fan-mail-table{
+    margin: 15px;
+    width: 78rem;
+    /*border-bottom: 1px solid #00513b;*/
+    border-collapse: collapse;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+#fan-mail-table tr:nth-child(odd){
+    background-color: #f1fffd;
+}
+
+th{
+    background-color: rgba(9,114,106,0.51);
+    color: black;
+    padding: 6px;
+    font-style: normal;
+    font-weight: bold;
+    border-bottom: 1px solid #00513b;
+}
+
+.show-mail-td{
+    border-bottom: 1px solid #00513b;
+    padding: 6px;
+}
+
+#fan-mail-body{
+    font-size: 20px;
+    width: 80rem;
+    text-align: left;
+    padding: 6px;
+    background-color: #e4f4ec;
+    border-radius: 7px;
+    border-collapse: collapse;
+}
+
+#sender_name{
+    width: 8rem;
+    /*font-style: italic;*/
+    font-family: harry potter;
+    font-size: 40px;
+}
+
+#date{
+    width: 7rem;
+    font-style: italic;
+}
+
+#title{
+    width: 10rem;
+    font-weight: bold;
+}
+
+#message{
+    width: 30rem;
+}
+
+#textarea-td{
+    background-color: rgba(0,81,59,0);
+    /*width: 15rem;*/
+    /*height: 16rem;*/
+    /*text-align: start;*/
 }

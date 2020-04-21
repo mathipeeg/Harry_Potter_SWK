@@ -6,13 +6,14 @@
     <title>Title</title>
 </head>
 <body>
-<div id="background">
+<div class="background-book">
     <div th:replace="/header :: header"></div>
 
     <br> 1. Harry Potter and the Philosopher’s Stone (1997)<br>
     <br>
-    <img class="book-photo" src="../static/img/anmeldelse.png" alt="Simply Easy Learning"> <br>
-
+    <div class="img-div">
+        <img class="book-photo-big" src="../static/img/anmeldelse.png" alt="Simply Easy Learning"> <br>
+    </div>
     2. Harry Potter and the Chamber of Secrets (1998)<br><br>
 
     3. Harry Potter and the Prisoner of Azkaban (1999)<br><br>
@@ -35,6 +36,10 @@
         <h5>Kontakt: <b>hp@fan4ever.com</b>
             <span id="footer-span">||</span> MEN ring ikke </h5>
     </footer>
+</div>
+<div class="footer">
+    <h5>Kontakt: <b>hp@fan4ever.com</b>
+        <span id="footer-span">||</span> MEN ring ikke </h5>
 </div>
 </body>
 </html>

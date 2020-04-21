@@ -6,25 +6,29 @@
     <title>Fan Mail</title>
 </head>
 <body>
-    <div id="background">
+    <div id="background-house">
         <div th:replace="/header :: header"></div>
         <div class="container">
-            <button class="header-btn" onclick="window.location.href='/newMail'">New fanmail</button>
-            <table>
-                <tbody>
+            <button id="fan-mail-btn" onclick="window.location.href='/newMail'">New fanmail</button>
+            <table id="fan-mail-table">
+                <tbody id="fan-mail-body">
                     <th>Afsender</th>
                     <th>Dato</th>
                     <th>Title</th>
-                    <th>Besked</th>
+                    <th>Message</th>
                     <tr th:each="mail : ${mails}">
-                        <td id="sender_name" th:text="${mail.senderName}"></td>
-                        <td id="date" th:text="${mail.date}"></td>
-                        <td id="title" th:text="${mail.title}"></td>
-                        <td id="message" th:text="${mail.message}"></td>
+                        <td class="show-mail-td" id="sender_name" th:text="${mail.senderName}"></td>
+                        <td class="show-mail-td" id="date" th:text="${mail.date}"></td>
+                        <td class="show-mail-td" id="title" th:text="${mail.title}"></td>
+                        <td class="show-mail-td" id="message" th:text="${mail.message}"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
+    </div>
+    <div class="footer">
+        <h5>Kontakt: <b>hp@fan4ever.com</b>
+            <span id="footer-span">||</span> MEN ring ikke </h5>
     </div>
 </body>
 </html>
